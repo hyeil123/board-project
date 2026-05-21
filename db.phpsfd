@@ -1,0 +1,9 @@
+<?php
+$conn = mysqli_connect("localhost", "root", "너의DB비밀번호", "board_db");
+
+if (!$conn) {
+    die("DB 연결 실패: " . mysqli_connect_error());
+}
+
+mysqli_set_charset($conn, "utf8mb4");
+?>
